@@ -1,0 +1,30 @@
+{
+  "name": "exercises_for_programmers",
+  "version": "1.0.0",
+  "description": "JS version of Prag Prog book - Exercises for Programmers",
+  "main": "index.js",
+  "dependencies": {
+    "prompt": "^0.2.14"
+  },
+  "devDependencies": {
+    "prompt": "^0.2.14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blurredbits/js_exercises_for_programmers.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "ES6",
+    "Exercises"
+  ],
+  "author": "Mark Morris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blurredbits/js_exercises_for_programmers/issues"
+  },
+  "homepage": "https://github.com/blurredbits/js_exercises_for_programmers#readme"
+}
