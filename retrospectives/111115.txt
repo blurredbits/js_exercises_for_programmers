@@ -1,0 +1,52 @@
+Retrospective 11/11/15
+
+Started the day with exercise #1, and the very first hurdle was within NodeJS - how do I read user input?
+
+After reviewing the interwebs, I initally settled on the standard 'readline' library.
+This worked out well for the first set of exercises, but then I discovered that it created a nested mess. 
+Response #1 --> Response #2 --> Response #3 with a final close() call to stop
+the input.
+
+Ideas on how to fix it? Well, my first thought was to create an array of prompts and loop thru those
+instead. Using the on('line') event would have allow me to trap input events - but that still didn't
+solve the problem of assigning variables to the respective prompts. Better to look for a different
+solution at the expense of adding a dependency.
+
+Enter 'prompt'.
+
+This solution ended up working well - but caused a bit of restructing with my Dev environment.
+Couple of actions items here:
+
+1. Need to research 'npm install -g' and how that affects require statements. The expectation was
+that with an 'npm install -g prompt', I could use the require statement 'globally' - didn't appear to
+work that way. Still had to 'npm install prompt' in the project directory to use `let prompt = require('prompt')`
+
+2. Need to review .gitignore and .gitignore_global. Right now, I've got the same information duplicated
+in both files - but it probably doesn't need to be that way - my first thought is to seperate OS/editor functions
+into the _global file and more language specific functions into the standard ignore file. Hoping it 
+will work that way. In any event - took a bit of time, but I think I got it straigtened out so that
+I'm not checking into 'node_module' files into github - and instead relying on a package.json file 
+that I can use with 'npm install' for the respective dependencies. Will have to do further testing.
+
+3. Need to research JSON validations - especially around integers. Hoping to take advantage of that
+vs. parseInt() everywhere.
+
+With those notes, out of the way - prompt seems to be a bit better solution for user input - but not
+perfect. Still have to clear the prompts on every exercise. Stupid redundant code.
+
+In regards to the objects themselves, saw a couple of opportunities to not only attach properties
+but also attach actions. See exercise #7. Tried to extend the roomDimensions object to include methods
+such as `areaInFeet` and `areaInMeters`. No joy. Instead played around with the ES6 class pattern
+and created a new AreaCalculator object instead.
+
+Comparing Exercise 7 to Exercise 8 and beyond, you start to see me playing around with more & more ES6
+functions. Trying to get away from var - and using let & const instead. Still not happy with the
+calculation piece for the each exercise.
+
+Learnings for the day:
+
+1. String interpolation was LOOONG overdue for JS. Hooray string interpolation!
+2. let & const ROCK.
+3. ~/.gitignore_global seems to be the main config file for git.
+4. Node 5 is a groovy little REPL for testing things - but sending files in, need to use 'use strict'; for ES6
+   functionality.
