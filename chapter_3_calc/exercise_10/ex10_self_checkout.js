@@ -3,7 +3,7 @@
 // Calculate the tax using a rate of 5.5%. Print out the the line items
 // with the quantity and total, and then print out the subtotal, tax amount and total.
 
-'use strict';
+'use strict'
 
 let prompt = require('prompt')
 
