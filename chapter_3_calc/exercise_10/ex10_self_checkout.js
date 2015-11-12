@@ -11,6 +11,7 @@ let prompt = require('prompt')
 prompt.message = ""
 prompt.delimiter = ""
 
+
 let shoppingCart = {
   properties: {
     itemOnePrice: {
