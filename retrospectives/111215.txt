@@ -1,0 +1,30 @@
+Retrospective 11/12/15.
+
+Well, didn't get as much done as yesterday. Crappy excuse? Fallout 4 day. Doh.
+
+In any event, finished off the calculation portion of the exercise and jumped into the decisions chapter.
+
+Nothing really impressive to do in this chapter (yet), but it was a chance to practice using `prompt` more.
+So what did I learn today? Well, it took me all the way to exercise 14 before I tried the new arrow syntax
+in ES6. Much cleaner, in that instead of this for prompt:
+
+prompt.get(inputPrompter, function(err, result) {})
+
+I can do this:
+
+prompt.get(inputPrompter, (err, result) => {})
+
+It's the little things, right?
+
+What else? Played around with more JS objects. See exercise #13. This exercise was all about compound
+interest and seemed ideal for an object to take care of the calculations. Should have started doing
+this awhile ago - but I ended up passing in the results object from `prompt` and used the constructor
+to initialize the object with those input results. What could be improved?
+
+1. Validation that all the required values are there - if not, default a base value in.
+2. Validation that the values are of the right type (given JS funky nature and tendency to typecast as needed.)
+3. Reviewing the style here (https://github.com/elierotenberg/coding-styles/blob/master/es6.md), should probably
+   stick to `const` as much as possible.
+
+Those were the big take-aways from today. Quick review of the upcoming exercises shows that the exercise get
+a bit better.
