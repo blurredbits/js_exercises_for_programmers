@@ -1,0 +1,34 @@
+Friday the 13th.
+
+Not normally superstitous, but what a day. First and foremost, the attacks on Paris. 
+
+Over 100 confirmed dead? What the hell is going on in this world?
+
+Can't even imagine this sort of attack in America - well, actually, given the extremists that
+are already present in this country - maybe that isn't so far fetched.
+
+In any event that was just ONE thing that happened today. Sorry for the departure, but
+coding just wasn't on my mind today.
+
+First, I got a call from the unemployment office - apparently, my previous company disputed
+the fact that I said that I was laid-off. Won't jump into too many details - but
+there seems to be a serious case of asshole happening at my previous company.
+
+Along those lines, I found out tonight that one of the previous engineers that I worked with
+was let go. A really nice guy, and based on previous conversation guess he just didn't
+fit the "new" mold. Assholes, indeed.
+
+Ok. Coding.
+
+Not nearly enough accomplished today - but still got a chance to play with let/const and
+following the pattern that I built yesterday (instantiatng objects with the results from the
+prompter object).
+
+Didn't finish it - but got a good start on the Temperature Converter. A bit of wrinkle in that
+I want to ask for input first - make a decision based on that input and then ask for more
+input. I'm sure it won't be that difficult - just a bit different from the usual pattern
+that I've been following so far.
+
+That is all. Tomorrow is a new day.
+
+
